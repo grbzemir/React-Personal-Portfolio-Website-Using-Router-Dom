@@ -6,12 +6,13 @@ import './App.css'
 import Home from './Pages/Home'
 import Projects from './Pages/Projects'
 import Experience from './Pages/Experience'
+import Navbar from './Components/Navbar'
 
 function App() {
-
   return (
     <div className="App">
       <Router>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
